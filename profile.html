@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">Profile</header>
+
+<div class="layout">
+
+<aside class="sidebar">
+<button onclick="goHome()">Home</button>
+<button onclick="logout()">Logout</button>
+</aside>
+
+<main class="feed">
+
+<div class="profile-card">
+<input type="file" id="avatarUpload">
+<img id="avatar">
+<input id="bioInput" placeholder="Write bio">
+<button onclick="saveProfile()">Save Profile</button>
+</div>
+
+<h2>Your Posts</h2>
+<div id="feed"></div>
+
+</main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

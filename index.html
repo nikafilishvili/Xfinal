@@ -1,71 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>X</title>
-
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>X Clone</title>
+<link rel="stylesheet" href="style.css">
 </head>
+<body class="auth">
 
-<body>
-
-<div class="layout">
-
-
-<aside class="sidebar">
-<div class="logo">𝕏</div>
-
-<nav>
-<a class="menu active">🏠 Home</a>
-<a class="menu">🔍 Explore</a>
-<a class="menu">🔔 Notifications</a>
-<a class="menu">✉ Messages</a>
-<a class="menu">🔖 Bookmarks</a>
-<a class="menu">👤 Profile</a>
-</nav>
-
-<button class="post-btn">Post</button>
-</aside>
-
-
-
-<main class="feed">
-
-<div class="feed-header">
-<span class="active-tab">For you</span>
-<span>Following</span>
+<div class="auth-card">
+<h1>𝕏</h1>
+<input id="loginUser" placeholder="Username">
+<input id="loginPass" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<a href="register.html">Create account</a>
 </div>
 
-
-<div class="tweet-box">
-<div class="avatar">N</div>
-<input id="tweetInput" placeholder="What’s happening?">
-<button id="postBtn" class="tweet-btn">Post</button>
-</div>
-
-
-<div id="timeline"></div>
-
-</main>
-
-
-
-<aside class="right">
-
-<input class="search" placeholder="Search">
-
-<div class="card">
-<h3>Subscribe to Premium</h3>
-<p>Unlock new features.</p>
-<button>Subscribe</button>
-</div>
-
-</aside>
-
-</div>
-
-<script src="script.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

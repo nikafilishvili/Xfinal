@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+
+<aside class="sidebar">
+
+<div class="logo">
+<svg width="30" fill="white" viewBox="0 0 24 24">
+<path d="M18 2h3l-7.5 8.6L22 22h-6l-4.7-6.2L5.5 22H2l8.1-9.2L2 2h6l4.3 5.7L18 2z"/>
+</svg>
+</div>
+
+<nav>
+<button class="nav active">
+🏠 Home
+</button>
+
+<button class="nav" onclick="goProfile()">
+👤 Profile
+</button>
+
+<button class="nav" onclick="logout()">
+🚪 Logout
+</button>
+</nav>
+
+</aside>
+
+
+<main class="feed">
+
+<header class="feed-header">
+<h2>Home</h2>
+</header>
+
+<div class="composer">
+
+<img class="avatar" src="https://i.pravatar.cc/40">
+
+<div class="composer-body">
+<textarea id="postInput" placeholder="What is happening?"></textarea>
+
+<div class="composer-actions">
+<input type="file" id="imgUpload">
+<button onclick="addPost()">Post</button>
+</div>
+</div>
+
+</div>
+
+<div id="feed"></div>
+
+</main>
+
+
+<aside class="right">
+<div class="card">
+<h3>Who to follow</h3>
+<div id="suggestions"></div>
+</div>
+</aside>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
